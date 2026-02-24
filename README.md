@@ -1,8 +1,9 @@
-# AsyncSupplierDemo
+#AsyncSupplierDemo
 
-AsyncSupplierDemo demonstrates the use of asynchronous suppliers in Java using CompletableFuture. It showcases practical examples including async execution, exception handling, combining results, and working with a cached Fibonacci sequence.
+AsyncSupplierDemo demonstrates the use of asynchronous suppliers in Java using CompletableFuture.
+It includes practical examples such as async execution, exception handling, combining results, and working with a cached Fibonacci sequence.
 
-Features
+#Features
 
 Basic Async Supply – Run a supplier asynchronously and get the result.
 
@@ -12,7 +13,7 @@ Exception Handling – Handle exceptions gracefully with fallback values.
 
 Combine Two Suppliers – Combine results from multiple async suppliers.
 
-Fibonacci Utilities:
+#Fibonacci Utilities:
 
 Generate Fibonacci sequence with caching.
 
@@ -28,16 +29,17 @@ THREAD_POOL_SIZE – Size of the thread pool used for async tasks.
 
 FIB_CACHE_INITIAL_SIZE – Initial Fibonacci cache size and sequence length.
 
-Usage
+#Usage
 
 Clone or copy the project.
 
 Adjust configuration values if needed.
 
 Run the main method:
+
 java org.asyncsupplierdemo.AsyncSupplierDemo
 
-You will see logs showing:
+#Expected Logs:
 
 Async task execution and thread names.
 
@@ -47,11 +49,13 @@ Fibonacci sequence generation, partitioning, and sorting.
 
 Cache reuse behavior.
 
-Utility Methods
+#Utility Methods
 
 clearFibonacciCache() – Clears the cached Fibonacci sequences.
 
 setFibonacciCacheSize(int size) – Updates the cache size and sequence length.
+
+#Example Output
 
 --- demoBasicSupplyAsync ---
 BasicSupplier started [Thread: ForkJoinPool.commonPool-worker-1]
@@ -63,7 +67,7 @@ Odd (sorted): [1, 1, 3, 5, ...]
 Even (sorted): [0, 2, 8, 34, ...]
 Fibonacci cache cleared.
 
-Notes
+#Notes
 
 Thread pool ensures controlled concurrency.
 
